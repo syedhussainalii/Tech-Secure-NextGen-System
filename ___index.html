@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Secure NextGen Systems</title>
+    <link rel="icon" type="image/png" href="..\static\tsn.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .hero-section {
+            /* background: url('../static/main.jpg') no-repeat center center/cover; */
+            background-attachment: fixed; 
+            color: black;
+            padding: 150px 0;
+            min-height: 70vh;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero-section .container {
+            animation: animate__fadeInUp 1s ease-in-out;
+        }
+        @media (max-width: 768px) {
+            .hero-section {
+                padding: 100px 0;
+                min-height: 50vh;
+                background-attachment: scroll; 
+            }
+            .hero-section h1 {
+                font-size: 2.5rem;
+            }
+            .hero-section p.lead {
+                font-size: 1.2rem;
+            }
+        }
+        @media (max-width: 576px) {
+            .hero-section {
+                padding: 80px 0;
+                min-height: 40vh;
+            }
+            .hero-section h1 {
+                font-size: 1.8rem;
+            }
+            .hero-section p.lead {
+                font-size: 1rem;
+            }
+        }
+        .section-padding {
+            padding: 60px 0;
+        }
+        @media (max-width: 768px) {
+            .section-padding {
+                padding: 40px 0;
+            }
+        }
+        .feature-card {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            animation: animate__slideInUp 0.5s ease-in-out;
+        }
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .history-section {
+            background-color: #f8f9fa;
+        }
+        .contact-form {
+            background-color: #e9ecef;
+            padding: 40px;
+            border-radius: 10px;
+            animation: animate__fadeIn 1s ease-in-out;
+        }
+        @media (max-width: 768px) {
+            .contact-form {
+                padding: 20px;
+            }
+        }
+        .image-placeholder {
+            width: 100%;
+            height: 200px;
+            background-color: #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            animation: animate__fadeIn 1s ease-in-out;
+        }
+        @media (max-width: 576px) {
+            .image-placeholder {
+                height: 150px;
+            }
+        }
+        .navbar {
+            animation: animate__slideInDown 0.5s ease-in-out;
+        }
+        @media (max-width: 576px) {
+            .navbar-brand img {
+                height: 30px;
+            }
+        }
+        /* Enhanced Animation Keyframes */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px) scale(0.95);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+        @keyframes slideInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px) rotate(2deg);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0) rotate(0deg);
+            }
+        }
+        @keyframes slideInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-50px) scale(0.95);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        /* Scroll Animation Trigger */
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .animate-on-scroll.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top animate__animated animate__slideInDown">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                TSN Systems
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#history">History</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#partners">Partners</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container animate__animated animate__fadeInUp">
+            <h1 class="animate__animated animate__zoomIn">The Right Partner for Your Digital Transformation Needs</h1>
+            <p class="lead animate__animated animate__zoomIn" style="animation-delay: 0.2s;">Get the right advice and support for your cloud migration with Tech Secure NextGen Systems's Services.</p>
+            <a href="#contact" class="btn btn-light btn-lg mt-3 animate__animated animate__bounceIn" style="animation-delay: 0.4s;">Get Started</a>
+        </div>
+    </section>
+
+    <!-- History Section -->
+    <section id="history" class="history-section section-padding animate-on-scroll">
+        <div class="container">
+            <h2 class="text-center mb-5 animate__animated animate__fadeInDown">How Our Voyage Began</h2>
+            <div class="row">
+                <div class="col-md-6 animate__animated animate__slideInLeft">
+                    <p>Tech Secure NextGen Systems was founded in 1963 by three partners: Zafar Ahmad, Hsan Abbas, and Raisuddin Siddiqui. The partners were members of The Royal Institute of Naval Architects (RINA) and the Society of Tech Secure NextGen Systems Engineers (SME), UK, and additionally had an association with Pakistan Engineering Council (PEC). They were all engineers well-versed with working experience at commercial shipyards and ports throughout Pakistan, so they saw the value in joining forces.</p>
+                    <p>Initially, very few professionals were available individually, however, no company was public to offer shipbuilding and repairs services to the industry. Tech Secure NextGen Systems' founders knew that their success would come from working together as a team, and just in five years, Tech Secure NextGen Systems had grown to become one of the largest shipyards in the country.</p>
+                </div>
+                <div class="col-md-6 animate__animated animate__slideInRight">
+                    <img src="..\static\pic1.png" alt="History Image" class="img-fluid" style="width: 100%; height: 200px; object-fit: cover; margin-bottom: 20px; border-radius: 5px;">
+                    <p>For more than 40 years, Tech Secure NextGen Systems Experts have been working as non-exclusive surveyors to classification societies such as the American Bureau of Shipping (ABS), and Det Norske Veritas (DNV). The associates were certified by the Government of Pakistan permitting them to practice as Ship Surveyor in any port in Pakistan. Additionally, they have been carrying out "Condition Surveys" for the purchase of second-hand ships for more than 50 years.</p>
+                    <p>In 2013, Tech Secure NextGen Systems expanded its operations in the application of SAP systems, Microsoft Dynamics Cloud-Based Solutions, Salesforce Platforms, Oracle Applications, and ERP Solutions that will deliver value through increased efficiency and effectiveness.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-padding animate-on-scroll">
+        <div class="container">
+            <h2 class="text-center mb-5 animate__animated animate__fadeInDown">About Tech Secure NextGen Systems</h2>
+            <div class="row">
+                <div class="col-md-6 animate__animated animate__slideInLeft">
+                    <img src="..\static\pic2.png" alt="About Image" class="img-fluid" style="width: 100%; height: 200px; object-fit: cover; margin-bottom: 20px; border-radius: 5px;">
+                </div>
+                <div class="col-md-6 animate__animated animate__slideInRight">
+                    <p>Tech Secure NextGen Systems is a global consulting and solutions company that helps companies transform their everyday business activities to meet the demands of today's dynamic economy. We are recognized as a long-term trusted SAP partner and one of the leading Microsoft Dynamics, Salesforce, and Oracle Strategic advisors.</p>
+                    <p>We believe in delivering solutions on time with high-quality standards. We achieve this by putting the right people, doing the right things, at the right time at the right cost structure. By staying true to our founding principles, and encouraging freedom, passion, and therefore innovation, we are confident that we will continue to empower our clients for many years to come.</p>
+                    <p>Our goal is to help you become more efficient and effective in your day-to-day business operations by helping you adopt SAP solutions for your business that will help drive growth and profitability.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section-padding bg-light animate-on-scroll">
+        <div class="container">
+            <h2 class="text-center mb-5 animate__animated animate__fadeInDown">Our Services</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4 animate__animated animate__zoomIn" style="animation-delay: 0.1s;">
+                    <div class="card feature-card">
+                        <img src="..\static\pic3.png" alt="Customized Solutions Image" class="img-fluid" style="width: 100%; height: 200px; object-fit: cover; border-radius: 5px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Customized Solutions</h5>
+                            <p class="card-text">An automated transformation accessible to your employees and partners.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 animate__animated animate__zoomIn" style="animation-delay: 0.2s;">
+                    <div class="card feature-card">
+                        <img src="..\static\pic4.png" alt="Hassle-Free Process Image" class="img-fluid" style="width: 100%; height: 200px; object-fit: cover; border-radius: 5px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Hassle-Free Process</h5>
+                            <p class="card-text">Business Technology System that manifests unanticipated insights.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 animate__animated animate__zoomIn" style="animation-delay: 0.3s;">
+                    <div class="card feature-card">
+                        <img src="..\static\pic5.png" alt="After-Sales Support Image" class="img-fluid" style="width: 100%; height: 200px; object-fit: cover; border-radius: 5px;">
+                        <div class="card-body">
+                            <h5 class="card-title">After-Sales Support</h5>
+                            <p class="card-text">Limitless technical support that helps you grow your business.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4 animate__animated animate__fadeInUp">
+                <p class="lead">Synchronize your business with Cloud-Based Technology. Get the most out of your SAP, Microsoft Dynamics, Salesforce, and Oracle implementation with our comprehensive consulting services.</p>
+                <p class="lead">Leverage Our Optimized Expertise for Your Success. Transform your business with our comprehensive consulting services.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section id="partners" class="section-padding animate-on-scroll">
+        <div class="container">
+            <h2 class="text-center mb-5 animate__animated animate__fadeInDown">Our Partners</h2>
+            <div class="row">
+                <div class="col-md-6 animate__animated animate__slideInLeft">
+                    <img src="..\static\pic7.png" alt="Partners Image" class="img-fluid" style="width: 100%; height: 200px; object-fit: cover; margin-bottom: 20px; border-radius: 5px;">
+                </div>
+                <div class="col-md-6 animate__animated animate__slideInRight">
+                    <p>Leverage Our Optimized Expertise for Your Success. Transform your business with our comprehensive consulting services.</p>
+                    <p>Tech Secure NextGen Systems - Your Trusted SAP Consultants We guide you through a successful SAP, Microsoft Dynamics, Salesforce, and Oracle implementation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding animate-on-scroll">
+        <div class="container">
+            <h2 class="text-center mb-5 animate__animated animate__fadeInDown">Contact Us</h2>
+            <div class="row">
+                <div class="col-md-6 mx-auto contact-form animate__animated animate__fadeIn">
+                    <form id="contactForm">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control animate__animated animate__fadeIn" style="animation-delay: 0.1s;" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control animate__animated animate__fadeIn" style="animation-delay: 0.2s;" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control animate__animated animate__fadeIn" id="message" rows="5" style="animation-delay: 0.3s;" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100 animate__animated animate__bounceIn" style="animation-delay: 0.4s;">Send Message</button>
+                    </form>
+                </div>
+                <div class="col-md-6 animate__animated animate__slideInRight">
+                    <img src="..\static\pic6.png" alt="Contact Image" class="img-fluid" style="width: 100%; height: 200px; object-fit: cover; margin-bottom: 20px; border-radius: 5px;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4 animate__animated animate__fadeInUp">
+        <div class="container">
+            <p>© 2025 Tech Secure NextGen Systems. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! We will get back to you soon.');
+            this.reset();
+        });
+
+        // Scroll Animation Observer
+        const animateOnScrollElements = document.querySelectorAll('.animate-on-scroll');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+
+        animateOnScrollElements.forEach(element => {
+            observer.observe(element);
+        });
+    </script>
+</body>
+</html>
