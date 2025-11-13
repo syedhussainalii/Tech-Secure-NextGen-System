@@ -1,16 +1,74 @@
-.carousel-item img {
-    height: 60vh; /* 60% of viewport height */
-    object-fit: cover;
-  }
-  
-  @media (max-width: 768px) {
-    .carousel-item img {
-      height: 40vh; /* smaller on phones */
-    }
-  }
+/* === Carousel Styling (Fade Version) === */
 
-  
+/* Carousel container */
+.carousel {
+  width: 100%;              /* full width across screen */
+  max-width: 1200px;        /* optional: limit width for large screens */
+  margin: 0 auto;           /* center align horizontally */
+  border-radius: 10px;      /* smooth corners */
+  overflow: hidden;         /* hide any overflow */
+  max-height: 300px;        /* set desired height (adjust as needed) */
+}
+
+/* Inner wrapper takes full height */
+.carousel-inner {
+  height: 100%;
+}
+
+/* Each carousel slide */
+.carousel-item {
+  height: 100%;
+}
+
+/* Images inside each slide */
+.carousel-item img {
+  width: 100%;
+  height: 300px;            /* must match .carousel height */
+  object-fit: cover;        /* crop nicely without distortion */
+  object-position: center;  /* center the main subject */
+  display: block;
+}
+
+/* Control buttons (prev/next) */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Control icons size & clarity */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-size: 100%, 100%;
+  filter: invert(1); /* makes icons white if dark background */
+}
+
+/* Remove Bootstrap's default blue focus outline */
+.carousel-control-prev:focus,
+.carousel-control-next:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+/* === Responsive Adjustments === */
+
+/* Tablets and below */
+@media (max-width: 768px) {
   .carousel {
-    overflow: hidden;
-    border-radius: 10px;
+    max-height: 200px;
   }
+  .carousel-item img {
+    height: 200px;
+  }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+  .carousel {
+    max-height: 150px;
+  }
+  .carousel-item img {
+    height: 150px;
+  }
+}
