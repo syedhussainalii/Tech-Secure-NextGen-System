@@ -1,0 +1,16 @@
+.carousel-item img {
+    height: 60vh; /* 60% of viewport height */
+    object-fit: cover;
+  }
+  
+  @media (max-width: 768px) {
+    .carousel-item img {
+      height: 40vh; /* smaller on phones */
+    }
+  }
+
+  
+  .carousel {
+    overflow: hidden;
+    border-radius: 10px;
+  }
