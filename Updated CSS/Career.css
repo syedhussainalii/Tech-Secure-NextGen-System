@@ -128,21 +128,24 @@
 
 .career-form .btn-anime.v2 {
   display: inline-block;
-  background-color: #007bff;
+  background-color: #d38e25;
   color: #fff;
   padding: 12px 30px;
   border-radius: 8px;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  border: none;
+  border: 1px solid transparent;
   cursor: pointer;
   transition: background-color 0.3s ease;
   width: 100%;
+  
 }
 
 .career-form .btn-anime.v2:hover {
-  background-color: #0056b3;
+  background-color:#fff;
+  color: #d38e25;
+  border-color: #d38e25;
 }
 
 
