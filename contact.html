@@ -208,7 +208,7 @@
                             choice by many car owners because our experience and knowledge is selfe vident.For your car.
                         </p>
 
-                        <form id="contact-form" action="assets/mail.php" method="POST">
+                        <form id="contact-form" action="assets/php/mailContactUs.php" method="POST">
                             <div class="input-box">
                                 <input type="text" name="name" placeholder="Your Name" required="">
                                 <div class="my-icon icon-user"></div>
@@ -280,7 +280,7 @@
                 const formData = new FormData(contactForm);
 
                 // 4. Send the data to mail.php in the background
-                fetch('assets/mail.php', {
+                fetch('assets/php/mailContactUs.php', {
                     method: 'POST',
                     body: formData
                 })
