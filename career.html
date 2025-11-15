@@ -10,28 +10,20 @@
 
     <title>TECH Secure Nextgen System</title>
 
-    <!-- Apple Favicon -->
     <link rel="apple-touch-icon" href="assets/img/logo/favicon.svg">
 
-    <!-- All Device Favicon -->
     <link rel="icon" href="assets/img/logo/icon.svg">
 
-    <!-- Bootstrap -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 
-    <!-- All Icons -->
     <link rel="stylesheet" href="assets/all-icons/myicon.css">
 
-    <!-- Plugin -->
     <link rel="stylesheet" href="assets/css/plugins.min.css">
 
-    <!-- Style -->
     <link rel="stylesheet" href="assets/css/style.min.css">
 
-    <!-- Responsive -->
     <link rel="stylesheet" href="assets/css/responsive.min.css">
 
-    <!--Updated css-->
     <link rel="stylesheet" href="Updated CSS/Career.css">
 
     <style>
@@ -65,13 +57,7 @@
             display: none;
         }
 
-        select:invalid {
-            border-color: #dc3545 !important;
-        }
-
-        select.is-invalid {
-            border-color: #dc3545 !important;
-        }
+        /* Removed select:invalid styles as they are no longer needed for the state field */
 
         .was-validated .form-control:invalid,
         .form-control.is-invalid {
@@ -86,7 +72,6 @@
     <div id="main-wrapper">
         <div class="preloder"></div>
         <header>
-            <!-- Top Bar Start -->
             <div class="top-bar v2">
                 <div class="container">
                     <div class="top-bar-content">
@@ -115,9 +100,6 @@
                     </div>
                 </div>
             </div>
-            <!-- Top Bar End -->
-
-            <!-- Menu Bar Start -->
             <div class="menu-bar v2">
                 <div class="container">
                     <div class="menu-bar-content">
@@ -166,11 +148,9 @@
                     </div>
                 </div>
             </div>
-            <!-- Menu Bar End -->
         </header>
 
         <main>
-            <!-- Breadcrumb Start -->
             <section class="main-section">
                 <div class="Main">
                     <div class="container">
@@ -184,9 +164,6 @@
                     </div>
                 </div>
             </section>
-            <!-- Breadcrumb End -->
-
-            <!-- Job Application Section -->
             <section class="service-details">
                 <div class="container">
                     <div class="row">
@@ -196,11 +173,14 @@
                                 <h2 class="text-center mb-3">Job Application Form</h2>
                                 <p class="note text-center mb-4">For U.S.-based applicants only</p>
 
-                                <form id="jobForm" class="needs-validation" novalidate action="assets/php/mailCareers.php" method="POST" enctype="multipart/form-data">
+                                <form id="jobForm" class="needs-validation" novalidate
+                                    action="assets/php/mailCareer.php" method="POST" enctype="multipart/form-data">
                                     <div class="row">
                                         <div class="col-md-12 mb-4">
                                             <div class="input-group input-box position-relative">
-                                                <input type="text" id="fullname" name="fullname" class="form-control py-3 px-4 border-0 shadow-sm" placeholder="Full Name" required>
+                                                <input type="text" id="fullname" name="fullname"
+                                                    class="form-control py-3 px-4 border-0 shadow-sm"
+                                                    placeholder="Full Name" required>
                                                 <div class="input-group-append position-absolute end-0 top-0 mt-2 me-3">
                                                     <span class="my-icon icon-user text-orange"></span>
                                                 </div>
@@ -209,7 +189,9 @@
 
                                         <div class="col-md-12 mb-4">
                                             <div class="input-group input-box position-relative">
-                                                <input type="email" id="email" name="email" class="form-control py-3 px-4 border-0 shadow-sm" placeholder="Email Address" required>
+                                                <input type="email" id="email" name="email"
+                                                    class="form-control py-3 px-4 border-0 shadow-sm"
+                                                    placeholder="Email Address" required>
                                                 <div class="input-group-append position-absolute end-0 top-0 mt-2 me-3">
                                                     <span class="my-icon icon-envelope text-orange"></span>
                                                 </div>
@@ -218,8 +200,9 @@
 
                                         <div class="col-md-12 mb-4">
                                             <div class="input-group input-box position-relative">
-                                                <select id="state" name="state" class="form-control py-3 px-4 border-0 shadow-sm" required>
-                                                    <option value="" selected disabled>-- Select State --</option>
+                                                <select id="state" name="state"
+                                                    class="form-control py-3 px-4 border-0 shadow-sm" required>
+                                                    <option value="" disabled selected>Select State</option>
                                                     <option value="CA">California</option>
                                                     <option value="NY">New York</option>
                                                     <option value="TX">Texas</option>
@@ -232,16 +215,18 @@
                                                 </div>
                                             </div>
                                         </div>
-
                                         <div class="col-md-12 mb-4">
                                             <label for="resume" class="form-label">Upload Resume</label>
                                             <div class="input-group input-box position-relative">
-                                                <input type="file" id="resume" name="resume" class="form-control py-3 px-4 border-0 shadow-sm" accept=".pdf,.doc,.docx" required>
+                                                <input type="file" id="resume" name="resume"
+                                                    class="form-control py-3 px-4 border-0 shadow-sm"
+                                                    accept=".pdf,.doc,.docx" required>
                                                 <div class="input-group-append position-absolute end-0 top-0 mt-2 me-3">
                                                     <span class="my-icon icon-paper-plan text-orange"></span>
                                                 </div>
                                             </div>
-                                            <small class="form-text text-muted">Accepted formats: PDF, DOC, DOCX (Max 5MB)</small>
+                                            <small class="form-text text-muted">Accepted formats: PDF, DOC, DOCX (Max
+                                                5MB)</small>
                                         </div>
                                     </div>
 
@@ -260,108 +245,93 @@
                     </div>
                 </div>
             </section>
-            <!-- End Job Application Section -->
-                                                            </main>
-                                                            
-                                                            <footer>
-                                                            <div class="footer-main v2">
-                                                            <div class="container">
-                                                            <div class="footer-content">
-                                                                <p>© <a href="#">TSN</a> 2025 | All Rights Reserved</p>
-                                                                <ul>
-                                                                    <li><a href="#">Terms & Condition</a></li>
-                                                                    <li><a href="#">Privacy Policy</a></li>
-                                                                    <li><a href="#">Contact Us</a></li>
-                                                                </ul>
-                                                            </div>
-                                                            </div>
-                                                            </div>
-                                                            </footer>
-                                                            </div>
-                                                            
-                                                            <!-- Scripts -->
-                                                            <script src="assets/js/jquery-3.6.3.min.js"></script>
-                                                            <script src="assets/js/bootstrap.min.js"></script>
-                                                            <script src="assets/js/plugins.min.js"></script>
-                                                            <script src="assets/js/index.min.js"></script>
-                                                            
-                                                            <script>
-    document.getElementById('jobForm').addEventListener('submit', async function (e) {
-        // Check form validity before proceeding
-        if (!this.checkValidity()) {
-            e.preventDefault();
-            // Show validation feedback
-            this.classList.add('was-validated');
-            return;
-        }
+        </main>
 
-        // Prevent the default form submission
-        e.preventDefault();
+        <footer>
+            <div class="footer-main v2">
+                <div class="container">
+                    <div class="footer-content">
+                        <p>© <a href="#">TSN</a> 2025 | All Rights Reserved</p>
+                        <ul>
+                            <li><a href="#">Terms & Condition</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
 
-        const form = e.target;
-        const submitBtn = document.getElementById('submitBtn');
-        const responseMessage = document.getElementById('responseMessage');
+    <script src="assets/js/jquery-3.6.3.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/plugins.min.js"></script>
+    <script src="assets/js/index.min.js"></script>
 
-        // Create a FormData object from the form
-        const formData = new FormData(form);
-
-        // Disable button and show loading text
-        submitBtn.disabled = true;
-        submitBtn.innerHTML = 'Submitting...';
-        responseMessage.textContent = '';
-        responseMessage.className = 'response'; // Reset classes
-
-        try {
-            // Send the form data to the PHP script
-            const response = await fetch(form.action, {
-                method: form.method,
-                body: formData,
-                // Headers are not needed; fetch sets 'multipart-form-data' automatically with FormData
-            });
-
-            // Get the text response from PHP (mailCareers.php returns plain text)
-            const resultText = await response.text();
-
-            if (response.ok) {
-                // On success
-                responseMessage.textContent = resultText;
-                responseMessage.classList.add('alert', 'alert-success');
-                form.reset(); // Clear the form
-                form.classList.remove('was-validated'); // Remove validation classes
-            } else {
-                // On failure
-                responseMessage.textContent = 'Error: ' + resultText;
-                responseMessage.classList.add('alert', 'alert-danger');
+    <script>
+        document.getElementById('jobForm').addEventListener('submit', async function (e) {
+            // Check form validity before proceeding
+            if (!this.checkValidity()) {
+                e.preventDefault();
+                // Show validation feedback
+                this.classList.add('was-validated');
+                return;
             }
 
-        } catch (error) {
-            // For network errors
-            console.error('Submission error:', error);
-            responseMessage.textContent = 'A network error occurred. Please try again.';
-            responseMessage.classList.add('alert', 'alert-danger');
-        } finally {
-            // Re-enable the button
-            submitBtn.disabled = false;
-            submitBtn.innerHTML = 'Submit Application';
-        }
-    });
+            // Prevent the default form submission
+            e.preventDefault();
 
-    // Add form validation to handle the state dropdown properly
-    document.getElementById('jobForm').addEventListener('focusout', function(e) {
-        if (e.target.id === 'state' && !e.target.value) {
-            e.target.classList.add('is-invalid');
-        }
-    });
+            const form = e.target;
+            const submitBtn = document.getElementById('submitBtn');
+            const responseMessage = document.getElementById('responseMessage');
 
-    // Add event listener for state dropdown to handle validation
-    document.getElementById('state').addEventListener('change', function() {
-        if (this.value) {
-            this.classList.remove('is-invalid');
-        } else {
-            this.classList.add('is-invalid');
-        }
-    });
-</script>
-                                                            </body>
-                                                            
-                                                            </html>
+            // Create a FormData object from the form
+            const formData = new FormData(form);
+
+            // Disable button and show loading text
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = 'Submitting...';
+            responseMessage.textContent = '';
+            responseMessage.className = 'response'; // Reset classes
+
+            try {
+                // Send the form data to the PHP script
+                const response = await fetch(form.action, {
+                    method: form.method,
+                    body: formData,
+                    // Headers are not needed; fetch sets 'multipart-form-data' automatically with FormData
+                });
+
+                // Get the text response from PHP (mailCareers.php returns plain text)
+                const resultText = await response.text();
+
+                if (response.ok) {
+                    // On success
+                    responseMessage.textContent = resultText;
+                    responseMessage.classList.add('alert', 'alert-success');
+                    form.reset(); // Clear the form
+                    form.classList.remove('was-validated'); // Remove validation classes
+                } else {
+                    // On failure
+                    responseMessage.textContent = 'Error: ' + resultText;
+                    responseMessage.classList.add('alert', 'alert-danger');
+                }
+
+            } catch (error) {
+                // For network errors
+                console.error('Submission error:', error);
+                responseMessage.textContent = 'A network error occurred. Please try again.';
+                responseMessage.classList.add('alert', 'alert-danger');
+            } finally {
+                // Re-enable the button
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = 'Submit Application';
+            }
+        });
+
+        // === MODIFIED: Removed the 'focusout' and 'change' event listeners for the 'state' field. ===
+
+    </script>
+</body>
+
+</html>
