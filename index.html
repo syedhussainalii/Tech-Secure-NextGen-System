@@ -10,15 +10,11 @@
 
         <title>TECH Secure Nextgen System</title>
 
-
         <!-- Apple Favicon -->
         <link rel="apple-touch-icon" href="assets/img/logo/favicon.svg">
 
         <!-- home.css  -->
         <link rel="stylesheet" href="home.css">
-
-        <!-- header css  -->
-        <link rel="stylesheet" href="header.css">
 
         <!-- Bootstrap  -->
         <link
@@ -47,6 +43,14 @@
 
         <link rel="stylesheet" href="Updated CSS/fonts.css">
 
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link rel="stylesheet" href="Updated CSS/fonts.css">
+
+        <!-- header css  -->
+        <link rel="stylesheet" href="header.css">
+
+
         <style>
         .response.success {
             color: #28a745;
@@ -63,8 +67,28 @@
             margin-top: 15px;
             /* Add some space */
         }
+
+        .row.justify-content-center {
+            display: flex;
+            align-items: stretch;
+        }
+
+        .col-xl-4, .col-md-6 {
+            display: flex;
+        }
+
+        .process-card {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .btn-anime.v2:after, .btn-anime.v2:before, .link-anime.v2:after, .link-anime.v2:before {
+            left: 0;
+            background: #d38e25;
+        }
     </style>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     </head>
 
     <body>
@@ -79,55 +103,55 @@
                 <br>
 
                 <!-- Banner Start -->
-                <div id="carouselExample" class="carousel slide"
-                    data-bs-ride="carousel" data-bs-interval="3000">
+                <div class="container">
 
-                    <!-- Text on slider -->
-                    <!-- <h1 class="slider-heading">Cyber Security Solutions</h1> -->
-                    <div class="carousel-inner">
+                    <div id="carouselExample" class="carousel slide"
+                        data-bs-ride="carousel" data-bs-interval="3000">
+                        <div class="carousel-inner">
 
-                        <div class="carousel-item active">
-                            <img src="assets/img/slider/slide1.jpg"
-                                class="d-block w-100" alt="Slide 1">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="assets/img/slider/slide2.jpg"
-                                class="d-block w-100" alt="Slide 2">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="assets/img/slider/slide3.jpg"
-                                class="d-block w-100" alt="Slide 3">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="assets/img/slider/slide4.jpg"
-                                class="d-block w-100" alt="Slide 4">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="assets/img/slider/slide5.jpg"
-                                class="d-block w-100" alt="Slide 5">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="assets/img/slider/slide6.jpg"
-                                class="d-block w-100" alt="Slide 6">
+                            <div class="carousel-item active">
+                                <img src="assets/img/slider/slide1.jpg"
+                                    class="d-block w-100" alt="Slide 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/img/slider/slide2.jpg"
+                                    class="d-block w-100" alt="Slide 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/img/slider/slide3.jpg"
+                                    class="d-block w-100" alt="Slide 3">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/img/slider/slide4.jpg"
+                                    class="d-block w-100" alt="Slide 4">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/img/slider/slide5.jpg"
+                                    class="d-block w-100" alt="Slide 5">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/img/slider/slide6.jpg"
+                                    class="d-block w-100" alt="Slide 6">
+                            </div>
+
                         </div>
 
+                        <!-- Controls -->
+                        <button class="carousel-control-prev" type="button"
+                            data-bs-target="#carouselExample"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"
+                                aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button"
+                            data-bs-target="#carouselExample"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon"
+                                aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
-
-                    <!-- Controls -->
-                    <button class="carousel-control-prev" type="button"
-                        data-bs-target="#carouselExample"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon"
-                            aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button"
-                        data-bs-target="#carouselExample"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon"
-                            aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
                 </div>
                 <!-- Banner End -->
 
@@ -218,8 +242,8 @@
                         </div>
                     </div>
                 </section>
-
                 <!-- Who We Are End -->
+
 
                 <!-- Services Start -->
                 <section class="services v2">
@@ -337,47 +361,60 @@
                     </div>
                 </section>
                 <!-- Services End -->
+
+
                 <!-- Company Benefits Start -->
-                <section class="company-benefits">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <div class="content-box">
-                                    <div class="section-title">
-                                        <h6>Company Benefits</h6>
-                                        <h2>Revolutionizing the way you think
-                                            about growth</h2>
-                                        <p>&#10003; Accelerate Digital
-                                            Transformation Offerings.</p>
-                                        <p>&#10003; Optimize Go-To-Market (GTM)
-                                            Strategy.</p>
+                <div class="container">
+                    <section class="company-benefits">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="content-box">
+                                        <div class="section-title">
+                                            <h6>Company Benefits</h6>
+                                            <h2>Revolutionizing the way you
+                                                think
+                                                about growth</h2>
+                                            <p>&#10003; Accelerate Digital
+                                                Transformation Offerings.</p>
+                                            <p>&#10003; Optimize Go-To-Market
+                                                (GTM)
+                                                Strategy.</p>
 
-                                        <p>&#10003; Strengthen Core Service
-                                            Portfolio.</p>
+                                            <p>&#10003; Strengthen Core Service
+                                                Portfolio.</p>
 
-                                        <p>&#10003; Enhance Customer Retention &
-                                            Value.</p>
+                                            <p>&#10003; Enhance Customer
+                                                Retention &
+                                                Value.</p>
 
-                                        <p>&#10003; Build Strategic Partnerships
-                                            & Alliances.</p>
+                                            <p>&#10003; Build Strategic
+                                                Partnerships
+                                                & Alliances.</p>
 
-                                        <p>&#10003; Invest in Automation & AI.</p>
-                                        <p>&#10003; Talent & Capability Growth.</p>
-                                        <p>&#10003; Data-Driven Decision Making.</p>
+                                            <p>&#10003; Invest in Automation &
+                                                AI.</p>
+                                            <p>&#10003; Talent & Capability
+                                                Growth.</p>
+                                            <p>&#10003; Data-Driven Decision
+                                                Making.</p>
+                                        </div>
+
                                     </div>
-
                                 </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="box-img">
-                                    <img src="assets/img/Growth (2).jpg"
-                                        alt="right-img">
+                                <div class="col-lg-6">
+                                    <div class="box-img">
+                                        <img src="assets/img/Growth (2).jpg"
+                                            alt="right-img">
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </section>
-                <!-- Company Benefits End -->
+                    </section>
+                    <!-- Company Benefits End -->
+                </div>
+
+
                 <!-- Our Simple Step Start -->
                 <section class="our-simple-step v2">
                     <div class="container">
@@ -455,6 +492,8 @@
                     </div>
                 </section>
                 <!-- Our Simple Step End -->
+
+
                 <!-- Talk To Us Start -->
                 <section class="talk-to-us v1">
                     <div class="container">
@@ -579,12 +618,11 @@
                 });
             }
         });
-    </script>
+        </script>
         <script>
-  // Initialize all icons on the page
-  lucide.createIcons();
-</script>
-
+            // Initialize all icons on the page
+            lucide.createIcons();
+        </script>
         <script>
             fetch("header.html")
                 .then(res => res.text())
@@ -595,5 +633,4 @@
                 .then(data => document.getElementById("footer").innerHTML = data);
         </script>
     </body>
-
 </html>

@@ -1,6 +1,6 @@
 #carouselExample,
 #carouselExample .carousel-item {
-  height: 50vh; /* change to 40vh, 30vh, 25vh as you like */
+  height: 20vh; /* change to 40vh, 30vh, 25vh as you like */
 }
 
 #carouselExample .carousel-item img {
@@ -96,3 +96,6 @@
     text-decoration: none;
     font-size: 14px;
 }
+
+
+

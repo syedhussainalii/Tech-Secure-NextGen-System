@@ -1,32 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="utf-8">
-    <meta name="keywords" content="ConsTimes HTML5 Template">
-    <meta name="description" content="ConsTimes HTML5 Template">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <head>
+        <meta charset="utf-8">
+        <meta name="keywords" content="ConsTimes HTML5 Template">
+        <meta name="description" content="ConsTimes HTML5 Template">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>TECH Secure Nextgen System</title>
+        <title>TECH Secure Nextgen System</title>
 
-    <link rel="apple-touch-icon" href="assets/img/logo/favicon.svg">
+        <link rel="apple-touch-icon" href="assets/img/logo/favicon.svg">
 
-     <link rel="icon" href="assets/img/logo/TSN_Icon.jpg">
-     
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="icon" href="assets/img/logo/TSN_Icon.jpg">
 
-    <link rel="stylesheet" href="assets/all-icons/myicon.css">
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 
-    <link rel="stylesheet" href="assets/css/plugins.min.css">
+        <link rel="stylesheet" href="assets/all-icons/myicon.css">
 
-    <link rel="stylesheet" href="assets/css/style.min.css">
+        <link rel="stylesheet" href="assets/css/plugins.min.css">
 
-    <link rel="stylesheet" href="assets/css/responsive.min.css">
+        <link rel="stylesheet" href="assets/css/style.min.css">
 
-    <link rel="stylesheet" href="Updated CSS/Career.css">
+        <link rel="stylesheet" href="assets/css/responsive.min.css">
 
-    <style>
+        <link rel="stylesheet" href="Updated CSS/Career.css">
+
+        <!-- fonts link  -->
+        <link rel="stylesheet" href="Updated CSS/fonts.css">
+
+        <style>
         .response {
             min-height: 20px;
             padding: 10px;
@@ -63,124 +66,186 @@
         .form-control.is-invalid {
             border-color: #dc3545 !important;
         }
+
+        .btn-anime.v2:after, .btn-anime.v2:before, .link-anime.v2:after, .link-anime.v2:before {
+             left: 0;
+            background: #d38e25;
+        }
     </style>
+    </head>
 
-</head>
+    <body>
 
-<body>
+        <div id="main-wrapper">
+            <div class="preloder"></div>
 
-    <div id="main-wrapper">
-        <div class="preloder"></div>
+            <div id="header"></div>
 
-          <div id="header"></div>
-
-        <main>
-            <section class="main-section">
-                <div class="Main">
-                    <div class="container">
-                        <div class="breadcum-content">
-                            <h2>Career</h2>
-                            <ul>
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="career.html">Career</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="service-details">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 mx-auto">
-                            <div class="career-form">
-
-                                <h2 class="text-center mb-3">Job Application Form</h2>
-                                <p class="note text-center mb-4">For U.S.-based applicants only</p>
-
-                                <form id="jobForm" class="needs-validation" novalidate
-                                    action="assets/php/mailCareer.php" method="POST" enctype="multipart/form-data">
-                                    <div class="row">
-                                        <div class="col-md-12 mb-4">
-                                            <div class="input-group input-box position-relative">
-                                                <input type="text" id="fullname" name="fullname"
-                                                    class="form-control py-3 px-4 border-0 shadow-sm"
-                                                    placeholder="Full Name" required>
-                                                <div class="input-group-append position-absolute end-0 top-0 mt-2 me-3">
-                                                    <span class="my-icon icon-user text-orange"></span>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-md-12 mb-4">
-                                            <div class="input-group input-box position-relative">
-                                                <input type="email" id="email" name="email"
-                                                    class="form-control py-3 px-4 border-0 shadow-sm"
-                                                    placeholder="Email Address" required>
-                                                <div class="input-group-append position-absolute end-0 top-0 mt-2 me-3">
-                                                    <span class="my-icon icon-envelope text-orange"></span>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-md-12 mb-4">
-                                            <div class="input-group input-box position-relative">
-                                                <select id="state" name="state"
-                                                    class="form-control py-3 px-4 border-0 shadow-sm" required>
-                                                    <option value="" disabled selected>Select State</option>
-                                                    <option value="CA">California</option>
-                                                    <option value="NY">New York</option>
-                                                    <option value="TX">Texas</option>
-                                                    <option value="FL">Florida</option>
-                                                    <option value="IL">Illinois</option>
-                                                    <option value="OT">Other (U.S. State)</option>
-                                                </select>
-                                                <div class="input-group-append position-absolute end-0 top-0 mt-2 me-3">
-                                                    <span class="my-icon icon-location-pin-solid text-orange"></span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-12 mb-4">
-                                            <label for="resume" class="form-label">Upload Resume</label>
-                                            <div class="input-group input-box position-relative">
-                                                <input type="file" id="resume" name="resume"
-                                                    class="form-control py-3 px-4 border-0 shadow-sm"
-                                                    accept=".pdf,.doc,.docx" required>
-                                                <div class="input-group-append position-absolute end-0 top-0 mt-2 me-3">
-                                                    <span class="my-icon icon-paper-plan text-orange"></span>
-                                                </div>
-                                            </div>
-                                            <small class="form-text text-muted">Accepted formats: PDF, DOC, DOCX (Max
-                                                5MB)</small>
-                                        </div>
-                                    </div>
-
-                                    <div class="text-center mt-4">
-                                        <button type="submit" id="submitBtn" class="btn-anime v2 px-5 py-3 fs-6">
-                                            Submit Application
-                                        </button>
-                                    </div>
-
-                                    <div class="text-center mt-3">
-                                        <div id="responseMessage" class="response"></div>
-                                    </div>
-                                </form>
+            <main>
+                <section class="main-section">
+                    <div class="Main">
+                        <div class="container">
+                            <div class="breadcum-content">
+                                <h2>Career</h2>
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="career.html">Career</a></li>
+                                </ul>
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
-        </main>
+                </section>
+                <section class="service-details">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8 mx-auto">
+                                <div class="career-form">
 
-         <div id="footer"></div>
+                                    <h2 class="text-center mb-3">Job Application
+                                        Form</h2>
+                                    <p class="note text-center mb-4">For
+                                        U.S.-based applicants only</p>
 
-    </div>
+                                    <form id="jobForm" class="needs-validation"
+                                        novalidate
+                                        action="assets/php/mailCareer.php"
+                                        method="POST"
+                                        enctype="multipart/form-data">
+                                        <div class="row">
+                                            <div class="col-md-12 mb-4">
+                                                <div class="input-group
+                                                    input-box
+                                                    position-relative">
+                                                    <input type="text"
+                                                        id="fullname"
+                                                        name="fullname"
+                                                        class="form-control py-3
+                                                        px-4 border-0 shadow-sm"
+                                                        placeholder="Full Name"
+                                                        required>
+                                                    <div
+                                                        class="input-group-append
+                                                        position-absolute end-0
+                                                        top-0 mt-2 me-3">
+                                                        <span class="my-icon
+                                                            icon-user
+                                                            text-orange"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
 
-    <script src="assets/js/jquery-3.6.3.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/plugins.min.js"></script>
-    <script src="assets/js/index.min.js"></script>
+                                            <div class="col-md-12 mb-4">
+                                                <div class="input-group
+                                                    input-box
+                                                    position-relative">
+                                                    <input type="email"
+                                                        id="email" name="email"
+                                                        class="form-control py-3
+                                                        px-4 border-0 shadow-sm"
+                                                        placeholder="Email
+                                                        Address" required>
+                                                    <div
+                                                        class="input-group-append
+                                                        position-absolute end-0
+                                                        top-0 mt-2 me-3">
+                                                        <span class="my-icon
+                                                            icon-envelope
+                                                            text-orange"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
 
-    <script>
+                                            <div class="col-md-12 mb-4">
+                                                <div class="input-group
+                                                    input-box
+                                                    position-relative">
+                                                    <select id="state"
+                                                        name="state"
+                                                        class="form-control py-3
+                                                        px-4 border-0 shadow-sm"
+                                                        required>
+                                                        <option value=""
+                                                            disabled selected>Select
+                                                            State</option>
+                                                        <option value="CA">California</option>
+                                                        <option value="NY">New
+                                                            York</option>
+                                                        <option value="TX">Texas</option>
+                                                        <option value="FL">Florida</option>
+                                                        <option value="IL">Illinois</option>
+                                                        <option value="OT">Other
+                                                            (U.S. State)</option>
+                                                    </select>
+                                                    <div
+                                                        class="input-group-append
+                                                        position-absolute end-0
+                                                        top-0 mt-2 me-3">
+                                                        <span class="my-icon
+                                                            icon-location-pin-solid
+                                                            text-orange"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 mb-4">
+                                                <label for="resume"
+                                                    class="form-label">Upload
+                                                    Resume</label>
+                                                <div class="input-group
+                                                    input-box
+                                                    position-relative">
+                                                    <input type="file"
+                                                        id="resume"
+                                                        name="resume"
+                                                        class="form-control py-3
+                                                        px-4 border-0 shadow-sm"
+                                                        accept=".pdf,.doc,.docx"
+                                                        required>
+                                                    <div
+                                                        class="input-group-append
+                                                        position-absolute end-0
+                                                        top-0 mt-2 me-3">
+                                                        <span class="my-icon
+                                                            icon-paper-plan
+                                                            text-orange"></span>
+                                                    </div>
+                                                </div>
+                                                <small class="form-text
+                                                    text-muted">Accepted
+                                                    formats: PDF, DOC, DOCX (Max
+                                                    5MB)</small>
+                                            </div>
+                                        </div>
+
+                                        <div class="text-center mt-4">
+                                            <button type="submit" id="submitBtn"
+                                                class="btn-anime v2 px-5 py-3
+                                                fs-6">
+                                                Submit Application
+                                            </button>
+                                        </div>
+
+                                        <div class="text-center mt-3">
+                                            <div id="responseMessage"
+                                                class="response"></div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <div id="footer"></div>
+
+        </div>
+
+        <script src="assets/js/jquery-3.6.3.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/plugins.min.js"></script>
+        <script src="assets/js/index.min.js"></script>
+
+        <script>
         document.getElementById('jobForm').addEventListener('submit', async function (e) {
             // Check form validity before proceeding
             if (!this.checkValidity()) {
@@ -243,8 +308,7 @@
 
         // === MODIFIED: Removed the 'focusout' and 'change' event listeners for the 'state' field. ===
     </script>
-
-    <script>
+        <script>
             fetch("header.html")
                 .then(res => res.text())
                 .then(data => document.getElementById("header").innerHTML = data);
@@ -253,6 +317,6 @@
                 .then(res => res.text())
                 .then(data => document.getElementById("footer").innerHTML = data);
         </script>
-</body>
+    </body>
 
 </html>

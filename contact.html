@@ -1,34 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="utf-8">
-    <meta name="keywords" content="ConsTimes HTML5 Template">
-    <meta name="description" content="ConsTimes HTML5 Template">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <head>
+        <meta charset="utf-8">
+        <meta name="keywords" content="ConsTimes HTML5 Template">
+        <meta name="description" content="ConsTimes HTML5 Template">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>ConsTimes HTML5 Template</title>
-
-
-    <link rel="apple-touch-icon" href="assets/img/logo/favicon.svg">
-
-    <link rel="icon" href="assets/img/logo/TSN_Icon.jpg">
-
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-
-    <link rel="stylesheet" href="assets/all-icons/myicon.css">
-
-    <link rel="stylesheet" href="assets/css/plugins.min.css">
-
-    <link rel="stylesheet" href="assets/css/style.min.css">
-
-    <link rel="stylesheet" href="assets/css/responsive.min.css">
-
-    <link rel="stylesheet" href="Updated CSS/Contact.css">
+        <title>ConsTimes HTML5 Template</title>
 
 
-    <style>
+        <link rel="apple-touch-icon" href="assets/img/logo/favicon.svg">
+
+        <link rel="icon" href="assets/img/logo/TSN_Icon.jpg">
+
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+        <link rel="stylesheet" href="assets/all-icons/myicon.css">
+
+        <link rel="stylesheet" href="assets/css/plugins.min.css">
+
+        <link rel="stylesheet" href="assets/css/style.min.css">
+
+        <link rel="stylesheet" href="assets/css/responsive.min.css">
+
+        <link rel="stylesheet" href="Updated CSS/Contact.css">
+
+        <!-- fonts link  -->
+        <link rel="stylesheet" href="Updated CSS/fonts.css">
+
+
+        <style>
         .response.success {
             color: #28a745;
             /* Green */
@@ -44,112 +47,129 @@
             margin-top: 15px;
             /* Add some space */
         }
+
+            .btn-anime.v2:after, .btn-anime.v2:before, .link-anime.v2:after, .link-anime.v2:before {
+             left: 0;
+            background: #d38e25;
+        }
     </style>
+    </head>
 
-</head>
+    <body>
 
-<body>
+        <div id="main-wrapper">
+            <div class="preloder"></div>
 
-    <div id="main-wrapper">
-        <div class="preloder"></div>
+            <div id="header"></div>
 
-          <div id="header"></div>
+            <main>
+                <section class="main-section">
+                    <div class="Main">
+                        <div class="container">
+                            <div class="breadcum-content">
+                                <h2>Contact</h2>
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li>Contact</li>
+                                </ul>
+                            </div>
+                        </div>
 
-        <main>
-            <section class="main-section">
-                <div class="Main">
+                    </div>
+
+                </section>
+                <section class="contact-us">
                     <div class="container">
-                        <div class="breadcum-content">
-                            <h2>Contact</h2>
-                            <ul>
-                                <li><a href="index.html">Home</a></li>
-                                <li>Contact</li>
-                            </ul>
+                        <div class="contact-info-map">
+                            <div class="contact-left">
+                                <ul>
+                                    <li>
+                                        <div class="my-icon icon-phone-book"></div>
+                                        <div class="content">
+                                            <h4>Phone Number</h4>
+                                            <p><a href="#">+88 912 123 456</a></p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="my-icon
+                                            icon-envelope-solid"></div>
+                                        <div class="content">
+                                            <h4>Email</h4>
+                                            <p><a href="#">Dr. San
+                                                    Jose,California</a></p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="my-icon
+                                            icon-location-pin-solid"></div>
+                                        <div class="content">
+                                            <h4>Location</h4>
+                                            <p><a href="#">99 chicago,America</a></p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="contact-map">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14613.167032861855!2d90.433811!3d23.701273!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b767a022cd4b%3A0xaf33907e219d127!2sRayerbag%2C%20Dhaka!5e0!3m2!1sen!2sbd!4v1675146270950!5m2!1sen!2sbd"></iframe>
+                            </div>
+                        </div>
+                        <div class="contact-form wow animate__fadeInUp"
+                            data-wow-duration="1s" data-wow-delay="0.2s">
+                            <h2>We Can take your business to growth Up</h2>
+                            <p>For your car we will do everything advice,
+                                repairs and maintenance. We are the some
+                                preferred
+                                choice by many car owners because our experience
+                                and knowledge is selfe vident.For your car.
+                            </p>
+
+                            <form id="contact-form"
+                                action="assets/php/mailContactUs.php"
+                                method="POST">
+                                <div class="input-box">
+                                    <input type="text" name="name"
+                                        placeholder="Your Name" required="">
+                                    <div class="my-icon icon-user"></div>
+                                </div>
+                                <div class="input-box">
+                                    <input type="email" name="email"
+                                        placeholder="Your Email" required="">
+                                    <div class="my-icon icon-paper-plan"></div>
+                                </div>
+                                <div class="input-box">
+                                    <input type="number" name="phone"
+                                        placeholder="Phone Number" required="">
+                                    <div class="my-icon icon-call"></div>
+                                </div>
+                                <div class="input-box text-textarea">
+                                    <textarea name="message"
+                                        placeholder="Message"></textarea>
+                                    <div class="my-icon icon-envelope"></div>
+                                </div>
+                                <button type="submit" class="btn-anime v2">Submit</button>
+                                <p class="response"></p>
+                            </form>
+
                         </div>
                     </div>
+                </section>
+            </main>
 
-                </div>
+            <div id="footer"></div>
 
-            </section>
-            <section class="contact-us">
-                <div class="container">
-                    <div class="contact-info-map">
-                        <div class="contact-left">
-                            <ul>
-                                <li>
-                                    <div class="my-icon icon-phone-book"></div>
-                                    <div class="content">
-                                        <h4>Phone Number</h4>
-                                        <p><a href="#">+88 912 123 456</a></p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="my-icon icon-envelope-solid"></div>
-                                    <div class="content">
-                                        <h4>Email</h4>
-                                        <p><a href="#">Dr. San Jose,California</a></p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="my-icon icon-location-pin-solid"></div>
-                                    <div class="content">
-                                        <h4>Location</h4>
-                                        <p><a href="#">99 chicago,America</a></p>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="contact-map">
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14613.167032861855!2d90.433811!3d23.701273!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b767a022cd4b%3A0xaf33907e219d127!2sRayerbag%2C%20Dhaka!5e0!3m2!1sen!2sbd!4v1675146270950!5m2!1sen!2sbd"></iframe>
-                        </div>
-                    </div>
-                    <div class="contact-form wow animate__fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
-                        <h2>We Can take your business to growth Up</h2>
-                        <p>For your car we will do everything advice, repairs and maintenance. We are the some preferred
-                            choice by many car owners because our experience and knowledge is selfe vident.For your car.
-                        </p>
+        </div>
 
-                        <form id="contact-form" action="assets/php/mailContactUs.php" method="POST">
-                            <div class="input-box">
-                                <input type="text" name="name" placeholder="Your Name" required="">
-                                <div class="my-icon icon-user"></div>
-                            </div>
-                            <div class="input-box">
-                                <input type="email" name="email" placeholder="Your Email" required="">
-                                <div class="my-icon icon-paper-plan"></div>
-                            </div>
-                            <div class="input-box">
-                                <input type="number" name="phone" placeholder="Phone Number" required="">
-                                <div class="my-icon icon-call"></div>
-                            </div>
-                            <div class="input-box text-textarea">
-                                <textarea name="message" placeholder="Message"></textarea>
-                                <div class="my-icon icon-envelope"></div>
-                            </div>
-                            <button type="submit" class="btn-anime v2">Submit</button>
-                            <p class="response"></p>
-                        </form>
+        <script src="assets/js/jquery-3.6.3.min.js"></script>
 
-                    </div>
-                </div>
-            </section>
-        </main>
+        <script src="assets/js/bootstrap.min.js"></script>
 
-        <div id="footer"></div>
+        <script src="assets/js/plugins.min.js"></script>
 
-    </div>
-
-    <script src="assets/js/jquery-3.6.3.min.js"></script>
-
-    <script src="assets/js/bootstrap.min.js"></script>
-
-    <script src="assets/js/plugins.min.js"></script>
-
-    <script src="assets/js/index.min.js"></script>
+        <script src="assets/js/index.min.js"></script>
 
 
-    <script>
+        <script>
         document.addEventListener("DOMContentLoaded", function () {
             // Find the form on the page
             const contactForm = document.getElementById('contact-form');
@@ -201,8 +221,7 @@
             });
         });
     </script>
-
-    <script>
+        <script>
             fetch("header.html")
                 .then(res => res.text())
                 .then(data => document.getElementById("header").innerHTML = data);
@@ -211,6 +230,6 @@
                 .then(res => res.text())
                 .then(data => document.getElementById("footer").innerHTML = data);
         </script>
-</body>
+    </body>
 
 </html>
