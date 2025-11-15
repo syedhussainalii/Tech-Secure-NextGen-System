@@ -10,7 +10,6 @@
 }
 
 
-
 /* Carousel container */
 .carousel {
   width: 100%;
@@ -80,3 +79,20 @@
 }
 
 
+.top-bar .info-link ul {
+    display: flex;
+    gap: 40px; /* space between items */
+    align-items: center;
+}
+
+.top-bar .info-link ul li {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* space between icon and text */
+}
+
+.top-bar .info-link ul li a {
+    color: #333; /* or your default text color */
+    text-decoration: none;
+    font-size: 14px;
+}

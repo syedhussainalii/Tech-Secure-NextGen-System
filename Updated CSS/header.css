@@ -1,0 +1,47 @@
+/* Social icons list reset */
+.social-link ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+}
+
+/* Icon base style */
+.social-icon {
+    color: #555; /* default color */
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect */
+.social-icon:hover {
+    color: #ff6600; /* change this to your desired hover color */
+}   
+
+
+
+/* Base nav link */
+.main-menu ul li a {
+    color: #444;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* Arrow icon */
+.nav-arrow {
+    margin-left: 5px;
+    color: #444;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect */
+.main-menu ul li:hover > a,
+.main-menu ul li:hover > a .nav-arrow {
+    color: #ff6600; /* your hover color */
+}
+
+/* Active link (optional) */
+.main-menu ul li a.active {
+    color: #ff6600;
+}
