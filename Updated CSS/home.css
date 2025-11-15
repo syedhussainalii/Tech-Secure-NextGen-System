@@ -1,39 +1,39 @@
-/* === Carousel Styling (Fade Version) === */
+#carouselExample,
+#carouselExample .carousel-item {
+  height: 50vh; /* change to 40vh, 30vh, 25vh as you like */
+}
+
+#carouselExample .carousel-item img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+
 
 /* Carousel container */
 .carousel {
   width: 100%;
-  max-width: 1200px;
   margin: 0 auto;
   border-radius: 10px;
   overflow: hidden;
-  max-height: 300px;
+  max-height: 80vh; /* lets it shrink/grow relative to viewport */
 }
 
-/* Inner wrapper takes full height */
-.carousel-inner {
-  height: 100%;
-}
-
-/* Each carousel slide */
+/* Each slide */
 .carousel-item {
-  height: 100%;
-  position: relative; /* Required for overlay */
-  
-}
-
-/* Images inside each slide */
-.carousel-item img {
-  width: 100%;
-  height: 300px;  
-  object-fit: cover;
-  object-position: center;
-  display: block;
-  z-index: 1; /* image below overlay */
   position: relative;
 }
 
-/* === Black overlay (DIM EFFECT) === */
+/* Images */
+.carousel-item img {
+  width: 100%;
+  height: 100%;         /* fill parent container */
+  object-fit: cover;    /* crop image nicely */
+  display: block;
+}
+
+/* Optional: overlay */
 .carousel-item::after {
   content: "";
   position: absolute;
@@ -41,64 +41,42 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* semi-transparent black */
+  background: rgba(0, 0, 0, 0.3); /* lighter overlay for visibility */
   z-index: 2;
-  pointer-events: none; /* allows clicking through overlay */
+  pointer-events: none;
 }
 
-/* Control buttons */
+/* Controls */
 .carousel-control-prev,
 .carousel-control-next {
   width: 5%;
   top: 50%;
   transform: translateY(-50%);
-  z-index: 3; /* controls above overlay */
+  z-index: 3;
 }
 
-/* Control icons */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  background-size: 100%, 100%;
   filter: invert(1);
 }
 
-/* Remove Bootstrap outline */
-.carousel-control-prev:focus,
-.carousel-control-next:focus {
-  outline: none;
-  box-shadow: none;
+/* Responsive height adjustments */
+@media (max-width: 992px) {
+  .carousel {
+    max-height: 60vh;
+  }
 }
 
-/* === Responsive === */
 @media (max-width: 768px) {
   .carousel {
-    max-height: 200px;
-  }
-  .carousel-item img {
-    height: 200px;
+    max-height: 40vh;
   }
 }
 
 @media (max-width: 480px) {
   .carousel {
-    max-height: 150px;
-  }
-  .carousel-item img {
-    height: 150px;
+    max-height: 30vh;
   }
 }
 
-/* === Heading on slider === */
-.slider-heading {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 3; /* above overlay */
-  color: #fff;
-  font-size: 2.5rem;
-  font-weight: 700;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
+
