@@ -18,8 +18,8 @@ $mailProvider = 'smtp';
  */
 $sendThxEmail = true;
 
-$recipientEmail = 'tahapasha2008@gmail.com';
-$recipientName = 'Taha Pasha (Admin)';
+$recipientEmail = 'Info@tsnsys.us';
+$recipientName = 'Information TSN';
 
 /**
  * GMAIL SENDER SETTINGS

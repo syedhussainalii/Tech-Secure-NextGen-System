@@ -10,29 +10,60 @@
 
     <title>TECH Secure Nextgen System</title>
 
-    <!-- Apple Favicon -->
     <link rel="apple-touch-icon" href="assets/img/logo/favicon.svg">
 
-    <!-- All Device Favicon -->
     <link rel="icon" href="assets/img/logo/icon.svg">
 
-    <!-- Bootstrap -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 
-    <!-- All Icons -->
     <link rel="stylesheet" href="assets/all-icons/myicon.css">
 
-    <!-- Plugin -->
     <link rel="stylesheet" href="assets/css/plugins.min.css">
 
-    <!-- Style -->
     <link rel="stylesheet" href="assets/css/style.min.css">
 
-    <!-- Responsive -->
     <link rel="stylesheet" href="assets/css/responsive.min.css">
 
-    <!--Updated css-->
     <link rel="stylesheet" href="Updated CSS/Career.css">
+
+    <style>
+        .response {
+            min-height: 20px;
+            padding: 10px;
+            margin-top: 15px;
+            border-radius: 5px;
+            font-weight: 500;
+        }
+
+        .response.success {
+            color: #28a745;
+            background-color: #d4edda;
+            border: 1px solid #c3e6cb;
+        }
+
+        .response.error {
+            color: #dc3545;
+            background-color: #f8d7da;
+            border: 1px solid #f5c6cb;
+        }
+
+        .response.sending {
+            color: #0056b3;
+            background-color: #cce5ff;
+            border: 1px solid #b8daff;
+        }
+
+        .response:empty {
+            display: none;
+        }
+
+        /* Removed select:invalid styles as they are no longer needed for the state field */
+
+        .was-validated .form-control:invalid,
+        .form-control.is-invalid {
+            border-color: #dc3545 !important;
+        }
+    </style>
 
 </head>
 
@@ -41,7 +72,6 @@
     <div id="main-wrapper">
         <div class="preloder"></div>
         <header>
-            <!-- Top Bar Start -->
             <div class="top-bar v2">
                 <div class="container">
                     <div class="top-bar-content">
@@ -61,22 +91,15 @@
                         </div>
                         <div class="social-link">
                             <ul>
-                                <li><a href="#"><span class="my-icon
-                                                icon-facebook"></span></a></li>
-                                <li><a href="#"><span class="my-icon
-                                                icon-instagram"></span></a></li>
-                                <li><a href="#"><span class="my-icon
-                                                icon-twitter"></span></a></li>
-                                <li><a href="#"><span class="my-icon
-                                                icon-linkedin"></span></a></li>
+                                <li><a href="#"><span class="my-icon icon-facebook"></span></a></li>
+                                <li><a href="#"><span class="my-icon icon-instagram"></span></a></li>
+                                <li><a href="#"><span class="my-icon icon-twitter"></span></a></li>
+                                <li><a href="#"><span class="my-icon icon-linkedin"></span></a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- Top Bar End -->
-
-            <!-- Menu Bar Start -->
             <div class="menu-bar v2">
                 <div class="container">
                     <div class="menu-bar-content">
@@ -85,40 +108,44 @@
                         </div>
                         <nav class="main-menu">
                             <ul>
-                                <li><a href="index.html" class="active">Home</a></li>
                                 <li>
-                                    <a href="about-us.html">About Us <span class="my-icon icon-arrow-down"></span></a>
-                                    <ul>
-                                        <li><a href="about-us.html">Our
-                                                Company Overview</a></li>
-                                        <li><a href="about-us.html#culture">Culture
-                                                and Diversity</a></li>
-                                        <li><a href="about-us.html#value">Our
-                                                Core Values</a></li>
-                                    </ul>
+                                    <a href="index.html" class="active">Home</a>
+
                                 </li>
                                 <li>
-                                    <a href="#">Services we offer <span class="my-icon icon-arrow-down"></span></a>
+                                    <a href="about-us.html">About Us<span class="my-icon icon-arrow-down"></span></a>
+
+                                    <ul>
+                                        <li><a href="about-us.html">Our Company Overview</a></li>
+                                        <li><a href="about-us.html#culture">Culture and Diversity</a></li>
+                                        <li><a href="about-us.html#value">Our Core Values</a></li>
+                                        <li><a href=""></a></li>
+                                    </ul>
+
+                                </li>
+                                <li>
+                                    <a href="#">Services we offer<span class="my-icon icon-arrow-down"></span></a>
                                     <ul>
                                         <li><a href="cots.html">COTS</a></li>
-                                        <li><a href="digitaltransformation.html">Digital
-                                                Transformation</a></li>
-                                        <li><a href="infosecurity.html">Information
-                                                Security & Governance</a></li>
+                                        <li><a href="digitaltransformation.html">Digital Transformation </span></a></li>
+
+                                        <li><a href="infosecurity.html">Information Security & Governance</a></li>
                                     </ul>
                                 </li>
                                 <li>
-                                    <a href="#">Technology <span class="my-icon icon-arrow-down"></span></a>
+                                    <a href="#">Training</a>
                                     <ul>
-                                        <li><a href="sap.html">SAP</a></li>
-                                        <li><a href="odoo.html">ODOO</a></li>
-                                        <li><a href="salesforce.html">Salesforce</a></li>
-                                        <li><a href="oracle.html">Oracle</a></li>
+                                        <!-- <li><a href="blog.html">Blog</a></li>-->
+
                                     </ul>
                                 </li>
-                                <li><a href="#">Training</a></li>
-                                <li><a href="career.html">Career</a></li>
-                                <li><a href="contact.html">Contact</a></li>
+                                <li>
+                                    <a href="career.html">Career</a>
+
+                                </li>
+                                <li><a href="contact.html">Contact</span></a>
+
+                                </li>
                             </ul>
                         </nav>
 
@@ -127,14 +154,14 @@
                             <span></span>
                             <span></span>
                         </button>
+
+
                     </div>
                 </div>
             </div>
-            <!-- Menu Bar End -->
         </header>
 
         <main>
-            <!-- Breadcrumb Start -->
             <section class="main-section">
                 <div class="Main">
                     <div class="container">
@@ -148,70 +175,87 @@
                     </div>
                 </div>
             </section>
-            <!-- Breadcrumb End -->
-
-            <!-- Job Application Section -->
-            <!-- Inside your existing Job Application Section -->
             <section class="service-details">
                 <div class="container">
-                    <div class="services-faq">
-                        <ul class="accordion" id="commonFaqAccordion">
-                            <li>
-                                <button class="faq-btn" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapse1">
-                                    <h2>Job Application Form</h2>
-                                    <span></span>
-                                </button>
-                                <div id="collapse1" class="accordion-collapse collapse show"
-                                    data-bs-parent="#commonFaqAccordion">
-                                    <div class="faq-content-body">
-                                        <div class="career-form wow animate__fadeInUp" data-wow-duration="1s"
-                                            data-wow-delay="0.2s">
-                                            <p class="note">For U.S.-based applicants only</p>
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <div class="career-form">
 
-                                            <form id="jobForm" enctype="multipart/form-data">
-                                                <div class="input-box">
-                                                    <input type="text" id="fullname" name="fullname"
-                                                        placeholder="Full Name" required>
-                                                    <div class="my-icon icon-user"></div>
-                                                </div>
-                                                <div class="input-box">
-                                                    <input type="email" id="email" name="email"
-                                                        placeholder="Email Address" required>
-                                                    <div class="my-icon icon-envelope"></div>
-                                                </div>
-                                                <div class="input-box">
-                                                    <select id="state" name="state" required>
-                                                        <option value="">-- Select State --</option>
-                                                        <option value="CA">California</option>
-                                                        <option value="NY">New York</option>
-                                                        <option value="TX">Texas</option>
-                                                        <option value="FL">Florida</option>
-                                                        <option value="IL">Illinois</option>
-                                                        <option disabled>───────────────</option>
-                                                        <option value="other">Other (U.S. State)</option>
-                                                    </select>
-                                                    <div class="my-icon icon-location-pin-solid"></div>
-                                                </div>
-                                                <div class="input-box">
-                                                    <input type="file" id="resume" name="resume"
-                                                        accept=".pdf,.doc,.docx" required>
-                                                    <div class="my-icon icon-paper-plan"></div>
-                                                </div>
+                                <h2 class="text-center mb-3">Job Application Form</h2>
+                                <p class="note text-center mb-4">For U.S.-based applicants only</p>
 
-                                                <button type="submit" class="btn-anime v2">Submit Application</button>
-                                                <p class="response"></p>
-                                            </form>
+                                <form id="jobForm" class="needs-validation" novalidate
+                                    action="assets/php/mailCareer.php" method="POST" enctype="multipart/form-data">
+                                    <div class="row">
+                                        <div class="col-md-12 mb-4">
+                                            <div class="input-group input-box position-relative">
+                                                <input type="text" id="fullname" name="fullname"
+                                                    class="form-control py-3 px-4 border-0 shadow-sm"
+                                                    placeholder="Full Name" required>
+                                                <div class="input-group-append position-absolute end-0 top-0 mt-2 me-3">
+                                                    <span class="my-icon icon-user text-orange"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-12 mb-4">
+                                            <div class="input-group input-box position-relative">
+                                                <input type="email" id="email" name="email"
+                                                    class="form-control py-3 px-4 border-0 shadow-sm"
+                                                    placeholder="Email Address" required>
+                                                <div class="input-group-append position-absolute end-0 top-0 mt-2 me-3">
+                                                    <span class="my-icon icon-envelope text-orange"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-12 mb-4">
+                                            <div class="input-group input-box position-relative">
+                                                <select id="state" name="state"
+                                                    class="form-control py-3 px-4 border-0 shadow-sm" required>
+                                                    <option value="" disabled selected>Select State</option>
+                                                    <option value="CA">California</option>
+                                                    <option value="NY">New York</option>
+                                                    <option value="TX">Texas</option>
+                                                    <option value="FL">Florida</option>
+                                                    <option value="IL">Illinois</option>
+                                                    <option value="OT">Other (U.S. State)</option>
+                                                </select>
+                                                <div class="input-group-append position-absolute end-0 top-0 mt-2 me-3">
+                                                    <span class="my-icon icon-location-pin-solid text-orange"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 mb-4">
+                                            <label for="resume" class="form-label">Upload Resume</label>
+                                            <div class="input-group input-box position-relative">
+                                                <input type="file" id="resume" name="resume"
+                                                    class="form-control py-3 px-4 border-0 shadow-sm"
+                                                    accept=".pdf,.doc,.docx" required>
+                                                <div class="input-group-append position-absolute end-0 top-0 mt-2 me-3">
+                                                    <span class="my-icon icon-paper-plan text-orange"></span>
+                                                </div>
+                                            </div>
+                                            <small class="form-text text-muted">Accepted formats: PDF, DOC, DOCX (Max
+                                                5MB)</small>
                                         </div>
                                     </div>
-                                </div>
-                            </li>
-                        </ul>
+
+                                    <div class="text-center mt-4">
+                                        <button type="submit" id="submitBtn" class="btn-anime v2 px-5 py-3 fs-6">
+                                            Submit Application
+                                        </button>
+                                    </div>
+
+                                    <div class="text-center mt-3">
+                                        <div id="responseMessage" class="response"></div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
-
-            <!-- End Job Application Section -->
         </main>
 
         <footer>
@@ -230,23 +274,74 @@
         </footer>
     </div>
 
-    <!-- Scripts -->
     <script src="assets/js/jquery-3.6.3.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/plugins.min.js"></script>
     <script src="assets/js/index.min.js"></script>
 
     <script>
-        document.getElementById("jobForm").addEventListener("submit", function (e) {
-            e.preventDefault();
-            const state = document.getElementById("state").value;
-            if (!state) {
-                alert("Please select your U.S. state before submitting.");
+        document.getElementById('jobForm').addEventListener('submit', async function (e) {
+            // Check form validity before proceeding
+            if (!this.checkValidity()) {
+                e.preventDefault();
+                // Show validation feedback
+                this.classList.add('was-validated');
                 return;
             }
-            alert(" Application submitted successfully! Thank you for applying.");
-            this.reset();
+
+            // Prevent the default form submission
+            e.preventDefault();
+
+            const form = e.target;
+            const submitBtn = document.getElementById('submitBtn');
+            const responseMessage = document.getElementById('responseMessage');
+
+            // Create a FormData object from the form
+            const formData = new FormData(form);
+
+            // Disable button and show loading text
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = 'Submitting...';
+            responseMessage.textContent = '';
+            responseMessage.className = 'response'; // Reset classes
+
+            try {
+                // Send the form data to the PHP script
+                const response = await fetch(form.action, {
+                    method: form.method,
+                    body: formData,
+                    // Headers are not needed; fetch sets 'multipart-form-data' automatically with FormData
+                });
+
+                // Get the text response from PHP (mailCareers.php returns plain text)
+                const resultText = await response.text();
+
+                if (response.ok) {
+                    // On success
+                    responseMessage.textContent = resultText;
+                    responseMessage.classList.add('alert', 'alert-success');
+                    form.reset(); // Clear the form
+                    form.classList.remove('was-validated'); // Remove validation classes
+                } else {
+                    // On failure
+                    responseMessage.textContent = 'Error: ' + resultText;
+                    responseMessage.classList.add('alert', 'alert-danger');
+                }
+
+            } catch (error) {
+                // For network errors
+                console.error('Submission error:', error);
+                responseMessage.textContent = 'A network error occurred. Please try again.';
+                responseMessage.classList.add('alert', 'alert-danger');
+            } finally {
+                // Re-enable the button
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = 'Submit Application';
+            }
         });
+
+        // === MODIFIED: Removed the 'focusout' and 'change' event listeners for the 'state' field. ===
+
     </script>
 </body>
 

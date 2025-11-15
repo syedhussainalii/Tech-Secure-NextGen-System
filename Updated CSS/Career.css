@@ -122,8 +122,52 @@
   top: 50%;
   right: 15px;
   transform: translateY(-50%);
-  color: #d38e25;   
+  color: #d38e25;
   font-size: 18px;
+}
+
+.text-orange {
+  color: #d38e25 !important;
+}
+
+.form-control {
+  border: 1px solid #e3e3e3;
+  border-radius: 8px;
+  background-color: #f8f8f8;
+}
+
+.form-control:focus {
+  border-color: #d38e25;
+  box-shadow: 0 0 0 0.2rem rgba(211, 142, 37, 0.25);
+  background-color: #fff;
+}
+
+.input-group {
+  position: relative;
+}
+
+.btn-anime.v2 {
+  display: inline-block;
+  background-color: #d38e25;
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-anime.v2:hover {
+  background-color: #fff;
+  color: #d38e25;
+  border-color: #d38e25;
+}
+
+.shadow-sm {
+  box-shadow: 0 .125rem .25rem rgba(0,0,0,.075) !important;
 }
 
 .career-form .btn-anime.v2 {
@@ -159,6 +203,22 @@
   color: #dc3545;
   font-weight: bold;
   margin-top: 15px;
+}
+
+.response.success {
+  color: #28a745;
+  /* Green */
+  font-weight: bold;
+  margin-top: 15px;
+  /* Add some space */
+}
+
+.response.error {
+  color: #dc3545;
+  /* Red */
+  font-weight: bold;
+  margin-top: 15px;
+  /* Add some space */
 }
 
 @media (max-width: 600px) {
